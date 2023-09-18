@@ -1,38 +1,125 @@
+/* Background color for body */
+body {
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+/* Container for the entire app */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+.App header {
+  background-color: #343a40; /* Dark gray background */
+  color: white;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Section */
+.App section {
+  background-color: #f8f9fa; /* Light gray background */
   min-height: 100vh;
+}
+
+main {
+  padding: 10px;
+  flex-grow: 1; /* Take up remaining available space */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+/* Adjust form styling */
+form {
+  position: fixed;
+  bottom: 0;
+  background-color: #343a40; /* Dark gray background */
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px; /* Create space between messages and the form */
+}
+
+form button {
+  width: 20%;
+  background-color: #007bff; /* Blue button color */
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Button */
+button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Sign-in */
+.sign-in {
+  color: #343a40;
+  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Other styles */
+ul,
+li {
+  text-align: left;
+  list-style: none;
+}
+
+p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.message {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  background: #0b93f6;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.received p {
+  background: #e5e5ea;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
+
+.sign-in-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sign-in-google {
+  width: 200px; /* Adjust the width as needed */
 }
