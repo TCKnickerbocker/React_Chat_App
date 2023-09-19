@@ -8,9 +8,3 @@ This repo is for a real-time chat application built using React, Firebase, and s
 - Enjoy real-time chat with other users.
 
 
-
-<hr>
-## TODO:
-- Private chats
-- Add shopping functionalities? (Users may purchase items from each other & barter)
-- Deploy to hosted site to enforce community guidelines
